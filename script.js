@@ -31,10 +31,13 @@ function Timer() {
 
   function startTimer() {
     timer = setInterval(updateTimer, 1);
+    startButton.disabled = true
   }
 
   function stopTimer() {
     clearInterval(timer);
+    startButton.disabled = false
+
   }
 
   function clearTimer() {
@@ -43,6 +46,7 @@ function Timer() {
     seconds = 0;
     minutes = 0;
     timerEl.textContent = "00:00:000";
+    startButton.disabled = false
   }
 
   startButton.addEventListener("click", () => {

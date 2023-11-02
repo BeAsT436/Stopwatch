@@ -30,7 +30,7 @@ button {
     color: #1a1a1a;
     border: none;
     border-radius: 25px;
-    transition: background-color 0.3 ease;
+    transition: background-color 0.3s ease;
 }
 button:hover{
     background-color: rgb(103, 245, 8);
@@ -40,3 +40,10 @@ button:hover{
     display: flex;
     gap: 10px;
 }
+button:active {
+    background-color: #ff6600;
+  }
+  button:disabled{
+    background-color: rgba(168, 159, 159, 0.575);
+    cursor: not-allowed;
+  }
